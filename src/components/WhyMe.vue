@@ -3,9 +3,10 @@
     <h1 style="color: white">Why me</h1>
     <v-row>
       <v-col
-        md="6"
-        sm="12"
         lg="3"
+        md="6"
+        xs="12"
+        sm="12"
         v-for="quality in qualities"
         :key="quality.title"
       >
