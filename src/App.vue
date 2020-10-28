@@ -14,7 +14,7 @@
           </v-container>
         </div>
         <div class="section">
-          <h3>Why me</h3>
+          <v-container> <why-me></why-me> </v-container>
         </div>
         <div class="section">
           <v-container>
@@ -32,12 +32,14 @@
 <script>
 import nav from "./components/Nav.vue";
 import ambitions from "./components/Ambitions.vue";
+import whyMe from "./components/WhyMe.vue";
 export default {
   name: "App",
 
   components: {
     "navigation-menu": nav,
     ambitions,
+    whyMe,
   },
   data() {
     return {

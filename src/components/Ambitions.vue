@@ -3,16 +3,16 @@
     <h1>Ambitions</h1>
     <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
       <v-timeline-item
-        v-for="(item, i) in ambitionsAtFin"
+        v-for="(ambition, i) in ambitionsAtFin"
         :key="i"
-        :color="item.color"
-        :icon="item.icon"
+        :color="ambition.color"
+        :icon="ambition.icon"
         fill-dot
       >
-        <v-card :color="item.color" dark>
-          <v-card-title class="title"> {{ item.title }} </v-card-title>
+        <v-card :color="ambition.color" dark>
+          <v-card-title class="title"> {{ ambition.title }} </v-card-title>
           <v-card-text class="white text--primary">
-            <p v-html="item.body"></p>
+            <p v-html="ambition.body"></p>
           </v-card-text>
         </v-card>
       </v-timeline-item>
@@ -82,9 +82,9 @@ export default {
       {
         color: "#00A2A2",
         icon: "mdi-buffer",
-        title: "Retire after a long and fullfilling carreer @FIN",
+        title: "Retire after a long and fullfilling career @FIN",
         body:
-          "I do not look forward to retirement. <br>What I do look forward to is growing within FPS Finance and build up my carreer there. <br>I look forward to spending my entire carreer within the same agency, and that is what this bulletpoint represents.",
+          "I do not look forward to retirement. <br>What I do look forward to is growing within FOD Finance and build up my career there. <br>I look forward to spending my entire career within the same agency, and that is what this bulletpoint represents.",
       },
     ],
   }),
