@@ -1,15 +1,20 @@
 <template>
   <div>
-    <h2>Hobbies</h2>
-    <v-carousel v-model="model">
-      <v-carousel-item v-for="(color, i) in colors" :key="color">
-        <v-sheet :color="color" height="100%" tile>
+    <h1>Hobbies</h1>
+    <v-img src="../assets/boardgames.jpg"></v-img>
+    <!-- <v-carousel v-model="model">
+      <v-carousel-item v-for="color in colors" :key="color">
+        <v-sheet :color="color" tile>
+          <v-img
+            lazy-src="https://picsum.photos/id/11/10/6"
+            src="https://picsum.photos/id/11/500/300"
+          ></v-img>
           <v-row class="fill-height" align="center" justify="center">
             <div class="display-3">Slide {{ i + 1 }}</div>
           </v-row>
         </v-sheet>
       </v-carousel-item>
-    </v-carousel>
+    </v-carousel> -->
   </div>
 </template>
 <script>

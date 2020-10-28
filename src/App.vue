@@ -7,11 +7,7 @@
           <h3 css="color:white">Introduction</h3>
         </div>
         <div class="section">
-          <v-container>
-            <div class="slide"><h3>slide 1</h3></div>
-            <div class="slide"><h3>slide 2</h3></div>
-            <div class="slide"><h3>slide 3</h3></div>
-          </v-container>
+          <v-container> <hobbies></hobbies></v-container>
         </div>
         <div class="section">
           <v-container> <why-me></why-me> </v-container>
@@ -31,6 +27,7 @@
 
 <script>
 import nav from "./components/Nav.vue";
+import hobbies from "./components/Hobbies.vue";
 import ambitions from "./components/Ambitions.vue";
 import whyMe from "./components/WhyMe.vue";
 export default {
@@ -40,6 +37,7 @@ export default {
     "navigation-menu": nav,
     ambitions,
     whyMe,
+    hobbies,
   },
   data() {
     return {
