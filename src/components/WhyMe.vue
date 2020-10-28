@@ -51,7 +51,8 @@ export default {
         },
         {
           title: "Can work independently",
-          description: "blabla",
+          description:
+            "<p>While  team work is important, a software developer also needs to be capeable of working on his own.</p><p>At the end of the day, you need to be capeable of writing your own code and interpreting your assignments.</p><p>A chain is only as strong as it's weakest link, and the same goes for a development team.</p><p>While knowing when to ask for help is an integral part of being a good teamplayer, knowing the resources at your disposal to solve problems is just as important.</p>",
         },
       ],
     };
