@@ -4,7 +4,9 @@
       <navigation-menu :menuItems="menuItems"></navigation-menu>
       <full-page :options="options" id="fullpage">
         <div class="section">
-          <h3 css="color:white">Introduction</h3>
+          <v-container>
+            <intro></intro>
+          </v-container>
         </div>
         <div class="section">
           <v-container> <hobbies></hobbies></v-container>
@@ -27,6 +29,7 @@
 
 <script>
 import nav from "./components/Nav.vue";
+import intro from "./components/Intro.vue";
 import hobbies from "./components/Hobbies.vue";
 import ambitions from "./components/Ambitions.vue";
 import whyMe from "./components/WhyMe.vue";
@@ -38,6 +41,7 @@ export default {
     ambitions,
     whyMe,
     hobbies,
+    intro,
   },
   data() {
     return {
@@ -48,7 +52,7 @@ export default {
         scrollBar: false,
         menu: "#menu",
         navigation: true,
-        anchors: ["about", "hobbies", "whyMe", "ambitions", "contact"],
+        anchors: ["intro", "hobbies", "whyMe", "ambitions", "contact"],
         sectionsColor: [
           "#00A2A2",
           "#fff",
