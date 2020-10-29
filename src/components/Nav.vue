@@ -1,5 +1,5 @@
 <template>
-  <ul id="menu">
+  <ul id="menu" class="d-none d-sm-flex">
     <li
       v-for="item in menuItems"
       :key="item.url"

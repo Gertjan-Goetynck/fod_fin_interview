@@ -2,6 +2,7 @@
   <v-app>
     <v-main>
       <navigation-menu :menuItems="menuItems"></navigation-menu>
+
       <full-page :options="options" id="fullpage">
         <div class="section">
           <v-container>
@@ -24,11 +25,13 @@
         </div>
       </full-page>
     </v-main>
+    <mobile-nav :app="true" :menuItems="menuItems"></mobile-nav>
   </v-app>
 </template>
 
 <script>
 import nav from "./components/Nav.vue";
+import mobileNav from "./components/MobileNav.vue";
 import intro from "./components/Intro.vue";
 import hobbies from "./components/Hobbies.vue";
 import ambitions from "./components/Ambitions.vue";
@@ -38,7 +41,8 @@ export default {
   name: "App",
 
   components: {
-    "navigation-menu": nav,
+    navigationMenu: nav,
+    mobileNav,
     ambitions,
     whyMe,
     hobbies,
@@ -78,10 +82,16 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style >
 @import "https://unpkg.com/fullpage.js/dist/fullpage.min.css";
 .content {
   width: 900px;
   margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  #fp-nav.fp-right {
+    display: none;
+  }
 }
 </style>
