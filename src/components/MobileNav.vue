@@ -2,7 +2,7 @@
   <v-bottom-navigation
     fixed
     grow
-    hide-on-scroll
+    :hide-on-scroll="true"
     class="d-flex d-sm-none"
     style="margin-top: 56px"
   >
