@@ -20,7 +20,7 @@
           </v-container>
         </div>
         <div class="section">
-          <h3>Contact</h3>
+          <v-container><contact></contact></v-container>
         </div>
       </full-page>
     </v-main>
@@ -33,6 +33,7 @@ import intro from "./components/Intro.vue";
 import hobbies from "./components/Hobbies.vue";
 import ambitions from "./components/Ambitions.vue";
 import whyMe from "./components/WhyMe.vue";
+import contact from "./components/Contact.vue";
 export default {
   name: "App",
 
@@ -41,6 +42,7 @@ export default {
     ambitions,
     whyMe,
     hobbies,
+    contact,
     intro,
   },
   data() {
