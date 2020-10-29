@@ -18,10 +18,12 @@
               width="100%"
               color="#00A2A2"
             >
-              <v-card-title>{{ hobby.title }}</v-card-title>
+              <v-card-title
+                ><h2>{{ hobby.title }}</h2></v-card-title
+              >
               <v-list-item v-for="quality in hobby.qualities" :key="quality">
                 <v-list-item-content>
-                  <v-list-item-title style="font-size: 1.2em">{{
+                  <v-list-item-title style="font-size: 1.2rem">{{
                     quality
                   }}</v-list-item-title>
                 </v-list-item-content>

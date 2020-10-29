@@ -30,7 +30,7 @@ export default {
         icon: "mdi-weight-lifter",
         title: "Give it all I've got during the selection procedure",
         body:
-          "The first stage, convincing the recruiters that I've got what it takes to get the job. <br> I know I have, and now it's up to me to show it to others.",
+          "The first stage, convincing the recruiters that I've got what it takes to get the job. <br> I know I do, and now it's up to me to show it to others.",
       },
       {
         color: "#00A2A2",
