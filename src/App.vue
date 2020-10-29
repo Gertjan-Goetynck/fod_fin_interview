@@ -37,6 +37,7 @@ import hobbies from "./components/Hobbies.vue";
 import ambitions from "./components/Ambitions.vue";
 import whyMe from "./components/WhyMe.vue";
 import contact from "./components/Contact.vue";
+
 export default {
   name: "App",
 
@@ -74,9 +75,29 @@ export default {
   computed: {
     menuItems() {
       return this.options.anchors.map((anchor) => {
+        let icon;
+        switch (anchor) {
+          case "intro":
+            icon = "mdi-account";
+            break;
+          case "hobbies":
+            icon = "mdi-basketball";
+            break;
+          case "whyMe":
+            icon = "mdi-head-question";
+            break;
+          case "ambitions":
+            icon = "mdi-arm-flex";
+            break;
+          case "contact":
+            icon = "mdi-email";
+            break;
+          default:
+            icon = "mdi-language-java";
+        }
         let title = anchor.replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase();
         title = title[0].toUpperCase() + title.slice(1);
-        return { url: anchor, title };
+        return { url: anchor, title, icon };
       });
     },
   },
@@ -84,11 +105,14 @@ export default {
 </script>
 <style >
 @import "https://unpkg.com/fullpage.js/dist/fullpage.min.css";
+p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
 .content {
   width: 900px;
   margin: 0 auto;
 }
-
 @media (max-width: 960px) {
   #fp-nav.fp-right {
     display: none;

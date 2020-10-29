@@ -10,7 +10,9 @@
         fill-dot
       >
         <v-card :color="ambition.color" dark>
-          <v-card-title class="title"> {{ ambition.title }} </v-card-title>
+          <v-card-title class="title">
+            {{ ambition.title }}
+          </v-card-title>
           <v-card-text class="white text--primary">
             <p v-html="ambition.body"></p>
           </v-card-text>
@@ -53,8 +55,8 @@ export default {
       },
       {
         color: "#00A2A2",
-        icon: "mdi-buffer",
-        title: "Improve and learn new skills",
+        icon: "mdi-lock-open",
+        title: "Improve and unlock new skills",
         body:
           "There are two main requirements to improve as a developer: practice and research. <br>Practice will naturally come through working on projects, and research happens when new challenges show up. <br>Both these things combined will help me push my limits further and further.",
       },
@@ -81,10 +83,10 @@ export default {
       },
       {
         color: "#00A2A2",
-        icon: "mdi-buffer",
-        title: "Retire after a long and fullfilling career @FIN",
+        icon: "mdi-party-popper",
+        title: "Enjoy a long and fullfilling career @FIN",
         body:
-          "I do not look forward to retirement. <br>What I do look forward to is growing within FOD Finance and build up my career there. <br>I look forward to spending my entire career within the same agency, and that is what this bulletpoint represents.",
+          "What I look forward to the most is the prospect of a long carreer @FIN. <br>I want to look back, and be proud of the things I have accomplished. <br>I want to have fond memories of working together with teams of amazing people. <br>That is the ultimate goal.",
       },
     ],
   }),

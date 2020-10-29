@@ -33,10 +33,12 @@ export default {
 }
 #menu a {
   text-decoration: none;
+  font-weight: bold;
   color: #000;
   padding: 0 1.1em 1.1em 1.1em;
 }
-#menu li.active a:after {
+#menu li.active a:after,
+#menu li a:hover:after {
   content: "";
   margin: 0 1.1em 0 1.1em;
   height: 2px;

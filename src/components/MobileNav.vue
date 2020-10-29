@@ -1,12 +1,21 @@
 <template>
-  <v-bottom-navigation fixed class="d-flex d-sm-none">
+  <v-bottom-navigation
+    fixed
+    grow
+    hide-on-scroll
+    shift
+    class="d-flex d-sm-none"
+    style="margin-top: 56px"
+  >
     <v-btn
       v-for="item in menuItems"
       :key="item.url"
       :value="item.url"
       :href="`#${item.url}`"
+      style="height: 100%"
     >
       <span>{{ item.title }}</span>
+      <v-icon>{{ item.icon }}</v-icon>
     </v-btn>
   </v-bottom-navigation>
 </template>
@@ -18,7 +27,7 @@ export default {
 };
 </script>
 <style scoped>
-a {
-  display: block;
+.v-btn--active {
+  color: #00a2a2 !important;
 }
 </style>

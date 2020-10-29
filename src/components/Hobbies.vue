@@ -21,7 +21,9 @@
               <v-card-title>{{ hobby.title }}</v-card-title>
               <v-list-item v-for="quality in hobby.qualities" :key="quality">
                 <v-list-item-content>
-                  <v-list-item-title>{{ quality }}</v-list-item-title>
+                  <v-list-item-title style="font-size: 1.2em">{{
+                    quality
+                  }}</v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
             </v-card>
