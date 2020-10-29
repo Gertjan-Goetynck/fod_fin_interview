@@ -8,7 +8,7 @@
       text="Hey!
 
 My name is Gertjan Goetynck, and I'm a 29 year old web developer.
-I am applying for a training to join the Java@FIN team.
+I am applying for a training to join the Java@FIN team as a developer.
 Scroll down or click the menu item you would like to visit to get to know a bit more about me, my motivations and why I am a good fit for the team.
 
 If you have any questions, feel free to ask! I look forward to answering them."
@@ -28,6 +28,11 @@ export default {
 .vue-typer .typed {
   color: white !important;
   font-size: 2em;
+}
+@media (max-width: 960px) {
+  .vue-typer .typed {
+    font-size: 1.4em;
+  }
 }
 .vue-typer .custom.caret {
   background-color: white;

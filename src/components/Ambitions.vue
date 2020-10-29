@@ -51,7 +51,7 @@ export default {
         icon: "mdi-language-java",
         title: "Get started as a Java developer @FIN",
         body:
-          "Playtime is over, now it is time for the real deal. <br>It's all about diving in, getting to know the project and team, and just going for it.",
+          "Playtime is over, now it is time for the real deal. <br>It's all about diving in, getting to know the projects and team, and just going for it.",
       },
       {
         color: "#00A2A2",
@@ -79,7 +79,7 @@ export default {
         icon: "mdi-arrow-top-right",
         title: "Grow within the government agency",
         body:
-          "As development skills grow, the developer grows. <br>My goal is to see this by starting as a junior developer, progressing to medior, and finally graduating as a senior. <br>Who knows what follows next?",
+          "As development skills grow, the developer grows. <br>My goal is to showcase this by starting as a junior developer, progressing to medior, and finally graduating as a senior. <br>Who knows what follows next?",
       },
       {
         color: "#00A2A2",

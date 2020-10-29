@@ -3,7 +3,6 @@
     fixed
     grow
     hide-on-scroll
-    shift
     class="d-flex d-sm-none"
     style="margin-top: 56px"
   >

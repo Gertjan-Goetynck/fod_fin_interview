@@ -65,7 +65,9 @@ export default {
 };
 </script>
 <style scoped>
-.hobbyGallery {
-  height: 900px;
+@media (max-width: 960px) {
+  .v-image {
+    height: 700px;
+  }
 }
 </style>
